@@ -1,0 +1,6 @@
+{
+  "name": "Pixel Party",
+  "description": "Multiplayer pixel art drawing game with live collaborative lobbies, Pixel Guess & Draw, Speed Battle, and custom lobbies.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

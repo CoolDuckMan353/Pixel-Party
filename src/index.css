@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Chivo', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #0A0A0A;
+    color: #FFFFFF;
+  }
+}
+
+.font-pixel {
+  font-family: 'Silkscreen', monospace;
+}
+
+.font-mono-code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.pixel-bg {
+  background-image: radial-gradient(#1E1E1E 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.accent-glow {
+  text-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+}
+
+.accent-glow-pink {
+  text-shadow: 0 0 20px rgba(236, 72, 153, 0.5);
+}
+
+.pixelated {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+/* Custom sleek bold scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2A2A2A;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3B82F6;
+}
+
+/* Pixel border utilities */
+.pixel-box-shadow {
+  box-shadow: 
+    0 -3px 0 0 #222222,
+    0 3px 0 0 #222222,
+    -3px 0 0 0 #222222,
+    3px 0 0 0 #222222;
+}
+
+.pixel-btn-shadow {
+  box-shadow: 0 4px 0 0 #000000;
+}
+
+.pixel-btn-shadow:active {
+  box-shadow: 0 1px 0 0 #000000;
+  transform: translateY(3px);
+}
+
+@keyframes floatFade {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(0.7);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-50px) scale(1.15);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-110px) scale(1);
+  }
+}
+
+.animate-float-fade {
+  animation: floatFade 2.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
